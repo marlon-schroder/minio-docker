@@ -8,7 +8,7 @@ fi
 GROUP="$1"
 USER="$2"
 MC="$HOME/.bin/mc"
-JSON="$HOME/minio_docker/group.json"
+JSON="$HOME/minio-docker/group.json"
 
 if [ ! -z $USER ]; then
 	user_exist=$($MC admin user list server|grep $USER|awk '{print $2}')

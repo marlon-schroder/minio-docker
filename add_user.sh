@@ -8,7 +8,7 @@ fi
 USER="$1"
 PASSWD="$2"
 MC="$HOME/.bin/mc"
-JSON="$HOME/minio_docker/user.json"
+JSON="$HOME/minio-docker/user.json"
 
 #################################
 ## CREATE JSON POLICY FOR USER ##
