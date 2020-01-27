@@ -52,7 +52,7 @@ if [ "$bucket_exist" != "folder" ]; then
 fi
 
 # If policy not exist in GROUP, then add
-policy_exist=$($MC admin group info server familia|grep Policy|awk '{print $2}')
+policy_exist=$($MC admin group info server $GROUP|grep Policy|awk '{print $2}')
 if [ "$policy_exist" != "$GROUP" ]; then
 	# add policy 'GROUP' as file '$JSON'
 	$MC admin policy add server $GROUP $JSON
